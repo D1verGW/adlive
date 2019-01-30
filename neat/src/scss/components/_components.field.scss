@@ -47,7 +47,7 @@
 }
 
 /**
- * Inline fields don't take up whole width 
+ * Inline fields don't take up whole width
  *
  * Used with search input in the navbar & toolbar.
  */
@@ -62,8 +62,8 @@
 
 
 /**
- * Labels are used with inputs, always use labels with inputs for better 
- * accesibility. Hide labels using `u-hidden-visually` to display it for 
+ * Labels are used with inputs, always use labels with inputs for better
+ * accesibility. Hide labels using `u-hidden-visually` to display it for
  * screen readers.
  *
  * USAGE: <label class="c-field__label u-hidden-visually"></label>
@@ -76,6 +76,17 @@
 	color: $field-label-color;
 	font-size: $field-label-font-size;
 	font-weight: $field-label-font-weight;
+}
+
+.c-field__account {
+	display: block;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	margin: 0 0 0.3125rem 0;
+	color: #3f4553;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-bottom: 10px;
 }
 
 

@@ -26,10 +26,16 @@
 	width: $avatar-img-width;
 	min-width: $avatar-img-width; /* [1] */
 	height: $avatar-img-height;
-	border-radius: 100%;
 	overflow: hidden;
 }
 
+.c-avatar__img_settings {
+	width: $avatar-img-width;
+	min-width: $avatar-img-width; /* [1] */
+	height: $avatar-img-height;
+	overflow: hidden;
+	border-radius: 100%;
+}
 
 /* Size variants
    ========================================================================== */

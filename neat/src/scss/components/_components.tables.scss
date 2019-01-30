@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /**
- * 1. The border-collapse CSS property specifies that the table's borders are 
+ * 1. The border-collapse CSS property specifies that the table's borders are
  *    collapsed and it means that adjacent cells share borders.
  */
 
@@ -19,13 +19,19 @@
 }
 
 
+.c-table-estimated {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+}
+
 /**
  * Responsive Tables
  *
  * Wrap any table with one of these classes to make it responsive at certain
  * breakpoint.
  *
- * 1. Wrap your table with this class `c-table-responsive` if the table's width 
+ * 1. Wrap your table with this class `c-table-responsive` if the table's width
  * is larger than 1200px.
  */
 
@@ -125,7 +131,7 @@
 
 /**
  * Table title/caption
- * <caption> 
+ * <caption>
  */
 
 .c-table__title {
@@ -188,6 +194,16 @@
 	}
 }
 
+.c-table__cell-est {
+	padding: 1.25rem 0 1.25rem 30px;
+	color: #768093;
+	font-size: 1.2rem;
+	font-weight: 500;
+	white-space: nowrap;
+	vertical-align: middle; }
+.c-table__cell-est:last-child {
+	padding-right: 30px; }
+
 
 /**
  * Table Row
@@ -235,7 +251,7 @@
 	color: $table-cell-color;
 	font-size: $table-cell-font-size;
 	font-weight: $table-cell-font-weight;
-	text-align: left;
+	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
 
@@ -250,6 +266,13 @@
 	font-weight: $font-weight-semibold;
 }
 
+.c-table__cell--head-est {
+	color: #768093;
+	font-size: 1.2rem;}
+
+.c-text-est {
+	color: #768093;
+}
 
 /**
  * Table cell with image
