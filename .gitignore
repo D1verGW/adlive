@@ -1,7 +1,6 @@
 # Folders to ignore
 bower_components
 node_modules/
-dist/
 
 # Numerous always-ignore extensions
 *.diff
@@ -30,3 +29,4 @@ nbproject
 Thumbs.db
 
 package-lock.json
+/neat/dist/*
