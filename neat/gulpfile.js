@@ -40,7 +40,7 @@ gulp.task('scripts', function() {
 		.pipe(uglify())
 		.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
 		.pipe(gulp.dest('public/js'))
-		.pipe(livereload());
+		// .pipe(livereload());
 });
 
 // watch all changes

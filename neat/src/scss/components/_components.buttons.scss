@@ -135,6 +135,20 @@
 	}
 }
 
+.c-btn--create {
+	border-color: $color-info;
+	background-color: #449f28;
+
+	&.c-btn--outline {
+		background-color: transparent;
+		color: $color-info;
+
+		&:hover {
+			color: $color-info;
+		}
+	}
+}
+
 .c-btn--info-change {
 	border-color: $color-info;
 	background-color: #c5bfc2;

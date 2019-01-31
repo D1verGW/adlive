@@ -33,7 +33,7 @@
 				<ul class="c-sidebar__list">
 					<li>
 						<a class="c-sidebar__link" href="dashboard02.html">
-							<img src="img/dashboard_active.png" alt="Neat">
+							<img src="img/dashboard.png" alt="Neat">
 							<i class="c-sidebar__icon feather"></i>
 							Dashboard
 						</a>
@@ -41,7 +41,7 @@
 					<li class="c-sidebar__item has-submenu show">
 						<a class="c-sidebar__link is-active" data-toggle="collapse" href="#sidebar-submenu-my-inventory"
 						   aria-expanded="true" aria-controls="sidebar-submenu">
-							<img src="img/my_inventory.png" alt="Neat">
+							<img src="img/myInventoryActive.png" alt="Neat">
 							<i class="c-sidebar__icon feather"></i>
 							My Inventory
 						</a>
@@ -250,23 +250,31 @@
 			</div>
 			<div class="c-card u-mb-large" style="padding: 0;">
 
-				<div class="row no-left-right-m-p col-12 u-pt-small u-pr-small">
-					<div class="col-7"></div>
-					<div class="col-3 u-pr-small u-pl-large">
-						<input class="c-input customized-search-label" type="text"
-							   placeholder="Recherche">
-					</div>
-					<div class="col-2">
-						<a href="_html_MyInventory_addSites.html">
-							<button class="col-6 c-btn c-btn--success u-mb-xsmall c-btn--fullwidth">
-								Add Site
-							</button>
-						</a>
-					</div>
-				</div>
-
 				<div class="row c-table-responsive@wide customized">
 					<table class="c-table">
+						<thead class="c-table__head">
+						<tr class="c-table__row important-white">
+							<th class="customized c-table__cell c-table__cell--head"></th>
+							<th class="customized c-table__cell c-table__cell--head"></th>
+							<th class="customized c-table__cell c-table__cell--head"></th>
+							<th class="customized c-table__cell c-table__cell--head"></th>
+							<th class="customized c-table__cell c-table__cell--head">
+								<div class="row no-left-right-m-p">
+									<div class="col-8 no-left-right-m-p" style="padding-left: 5px;">
+										<input class="c-input customized-search-label" type="text"
+											   placeholder="Recherche">
+									</div>
+									<div class="col-4">
+										<a href="_html_MyInventory_addSites.html">
+										<button class="col-6 c-btn c-btn--success u-mb-xsmall c-btn--fullwidth">
+											Add Site
+										</button>
+										</a>
+									</div>
+								</div>
+							</th>
+						</tr>
+						</thead>
 						<thead class="c-table__head">
 						<tr class="c-table__row">
 							<th class="customized c-table__cell c-table__cell--head">
@@ -299,12 +307,12 @@
 							</td>
 							<td class="c-table__cell customized">http://adlive.io</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch1" type="checkbox" checked="">
-											<span class="c-switch__label vertical-center-switch">On</span>
+											<span class="c-switch__label">On</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -339,12 +347,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch4" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -379,12 +387,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch5" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -419,12 +427,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch6" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -459,12 +467,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch7" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -499,12 +507,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch8" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -539,12 +547,12 @@
 							</td>
 							<td class="c-table__cell customized">http://test-adlive24.iageengineering.net</td>
 							<td class="c-table__cell customized">Status</td>
-							<td class="c-table__cell customized u-pr-small">
+							<td class="c-table__cell customized">
 								<div class="row col-12 no-left-right-m-p">
 									<div class="col-4 no-left-right-m-p mv-auto">
 										<label class="c-switch u-mr-small">
 											<input class="c-switch__input" id="switch9" type="checkbox">
-											<span class="c-switch__label vertical-center-switch">Off</span>
+											<span class="c-switch__label">Off</span>
 										</label>
 									</div>
 									<div class="col-8 no-left-right-m-p">
@@ -582,7 +590,6 @@
 			<footer class="c-footer u-mh-medium">
 				<p>© 2018 Adlive France</p>
 			</footer>
-		</div>
 	</main>
 </div>
 
