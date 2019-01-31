@@ -23,6 +23,23 @@
 	&.row {
 		margin: 0;
 	}
+
+	.c-btn {
+		&.c-btn--danger {
+			img {
+				padding-right: 5%;
+				transform: translateY(2px);
+			}
+		}
+	}
+	.c-btn {
+		&.c-btn--secondary {
+			img {
+				padding-right: 5%;
+				transform: translateY(2px);
+			}
+		}
+	}
 }
 
 .customized_btn_top {

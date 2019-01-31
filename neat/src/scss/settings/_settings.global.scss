@@ -5,11 +5,11 @@
 //
 // Set up global/base Neat's scss variables.
 //
-// Base variables are used across the whole UI components, any changes made 
+// Base variables are used across the whole UI components, any changes made
 // to these variables will affec the whole UI Kit.
 //
-// Unless you know what you are doing, don't change it here, instead, copy 
-// settings from this file into your custom settings' file to override 
+// Unless you know what you are doing, don't change it here, instead, copy
+// settings from this file into your custom settings' file to override
 // Neat's default settings.
 //
 
@@ -32,7 +32,7 @@
 // ========================================================================== */
 
 // Main Colors
-$color-info:      #2083FE !default; // blue 
+$color-info:      #ED4D4D !default; // blue
 $color-success:   #2FCA74 !default; // green
 $color-warning:   #f5b848 !default; // yellow
 $color-danger:    #ED4D4D !default; // red
@@ -44,7 +44,7 @@ $color-secondary: #768093 !default; // grey
 $color-pink: #F44C67 !default; // pink
 
 // Light Colors
-$color-info-light:      #E0EBFF !default; // blue 
+$color-info-light:      #E0EBFF !default; // blue
 $color-success-light:   #DAF4E6 !default; // green
 $color-warning-light:   #FFECDA !default; // yellow
 $color-danger-light:    #FFE2E2 !default; // red
@@ -75,10 +75,10 @@ $gradient-fancy: #4F5EF5, #6A77FF; // purple
 
 
 // Brand Color
-// 
+//
 // The brand color of the whole kit, will affect most UI components like toggles,
-// buttons and switchs. 
-// 
+// buttons and switchs.
+//
 
 $brand-color: $color-info !default;
 $body-background-color: $color-sky-light !default;
