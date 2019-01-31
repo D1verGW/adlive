@@ -55,12 +55,22 @@
 }
 
 /* align glyph */
-.left-addon .glyphicon  { left:  0px;}
-.right-addon .glyphicon { right: 10px;}
+.left-addon .glyphicon {
+	left: 0px;
+}
+
+.right-addon .glyphicon {
+	right: 10px;
+}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+.left-addon input {
+	padding-left: 30px;
+}
+
+.right-addon input {
+	padding-right: 30px;
+}
 
 .color_get_btn {
 	background-color: #2083FE;
@@ -135,7 +145,6 @@
 	background: white !important;
 }
 
-
 .no-left-right-m-p {
 	margin-left: 0;
 	margin-right: 0;
@@ -178,6 +187,7 @@
 .left-side-downarrow {
 	position: relative;
 }
+
 .left-side-downarrow:after {
 	position: absolute;
 	top: 6px;
@@ -191,7 +201,7 @@
 .customized-c-celect-downarrow {
 	position: relative;
 
-	&:after{
+	&:after {
 		position: absolute;
 		top: 6px;
 		right: 20px;
@@ -246,7 +256,7 @@
 	//border-radius: 100%;
 }
 
-.dashboard-c-select{
+.dashboard-c-select {
 	&:after {
 		right: 20px;
 	}
@@ -259,6 +269,7 @@
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
 	color: #828096;
+	font-size: 0.8em;
 }
 
 .dot-before-input {
@@ -267,7 +278,7 @@
 	&:before {
 		content: '';
 		position: absolute;
-		left: -5px;
+		left: -15px;
 		width: 10px;
 		height: 10px;
 		line-height: 0;
@@ -287,3 +298,34 @@
 		}
 	}
 }
+
+.main-page-img {
+
+}
+
+.estimated-income-panel {
+	font-size: 0.7em;
+}
+
+.estimated-income-panel-tabs {
+	a {
+		font-size: 0.7em;
+	}
+}
+
+.dashboard-partrers-with-income-grid {
+	display: grid;
+}
+
+@media screen and (min-width: 1500px) {
+	.dashboard-partrers-with-income-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.dashboard-partrers-with-income-grid {
+		grid-template-rows: 1fr 1fr;
+	}
+}
+

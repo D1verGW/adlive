@@ -35,19 +35,19 @@
 							<img src="img/dashboard.png" alt="Neat"><i class="c-sidebar__icon feather"></i>Dashboard
 						</a>
 					</li>
-					<li class="c-sidebar__item has-submenu show">
-						<a class="c-sidebar__link is-active" data-toggle="collapse" href="#sidebar-submenu-my-inventory"
+					<li class="c-sidebar__item has-submenu">
+						<a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-submenu-my-inventory"
 						   aria-expanded="true" aria-controls="sidebar-submenu">
 							<img src="img/my_inventory.png" alt="Neat">
 							<i class="c-sidebar__icon feather"></i>
 							My Inventory
 						</a>
 						<div>
-							<ul class="c-sidebar__list collapse show" id="sidebar-submenu-my-inventory"
+							<ul class="c-sidebar__list collapse" id="sidebar-submenu-my-inventory"
 								style="padding-left: 30px;">
 								<li><a class="c-sidebar__link" href="_html_MyInventory_Sites.html">Sites</a></li>
 								<li><a class="c-sidebar__link" href="_html_MyInventory_Ad_Units.html">Ad Units</a></li>
-								<li><a class="c-sidebar__link is-active"
+								<li><a class="c-sidebar__link"
 									   href="_html_MyInventory_Install.html">Install</a></li>
 							</ul>
 						</div>
@@ -73,7 +73,7 @@
 						</div>
 					</li>
 					<li>
-						<a class="c-sidebar__link" href="dashboard02.html">
+						<a class="c-sidebar__link is-active" href="dashboard02.html">
 							<img src="img/active_account.png" alt="Neat"><i class="c-sidebar__icon feather"></i>Account
 						</a>
 					</li>
@@ -229,7 +229,7 @@
 
 				<div class="c-dropdown__menu has-arrow dropdown-menu dropdown-menu-right"
 					 aria-labelledby="dropdownMenuAvatar">
-					<a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
+					<a class="c-dropdown__item dropdown-item" href="account-settings.html">Edit Profile</a>
 					<a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
 					<a class="c-dropdown__item dropdown-item" href="#">Log out</a>
 				</div>
@@ -319,13 +319,15 @@
 									</div>
 
 									<div class="col-4 u-ph-zero">
-										<div class="c-card u-text-center u-mv-medium u-mh-medium u-pv-xlarge">
+										<div class="c-card u-text-center u-mv-medium u-mh-medium u-pv-large">
 											<div class="c-snippet__render u-pv-small">
 												<div class="c-avatar c-avatar--xlarge u-inline-flex">
 													<img class="c-avatar__img" src="http://i.pravatar.cc/150?img=68">
 												</div>
 												<h5>Adam Sandler</h5>
 												<p class="">Freelance Web Developer</p>
+
+												<button class="c-btn c-btn--secondary c-btn--fullwidth u-mv-medium">Edit profile</button>
 											</div>
 										</div>
 									</div>
