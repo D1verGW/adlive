@@ -102,3 +102,31 @@
 	font-size: 20px;
 	content: "\e842";
 }
+
+.customized-c-celect-downarrow {
+	position: relative;
+
+	&:after{
+		position: absolute;
+		top: 6px;
+		right: 20px;
+		color: #768093;
+		font-family: "feather";
+		font-size: 20px;
+		content: "\e842";
+	}
+}
+
+.customized-nav-tabs {
+	border: none;
+	border-bottom: 1px solid gray;
+	width: fit-content;
+	box-sizing: border-box;
+
+	.c-tabs__link.active {
+		border-bottom: 3px solid red;
+	}
+	.c-tabs__link {
+		transform: translateY(2px);
+	}
+}
