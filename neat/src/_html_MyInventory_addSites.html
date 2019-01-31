@@ -253,17 +253,50 @@
 				</ul>
 			</div>
 			<div class="c-card u-mb-large">
-
 				<div class="row col-xl-12">
 					<div class="col-xl-6">
 						<div class="c-field u-mb-medium">
 							<label class="c-field__label" for="user-name">Name</label>
 							<input class="c-input" placeholder="Name" type="text" id="user-name">
 						</div>
+
+						<div class="c-field u-mb-medium">
+							<label class="c-field__label" for="implementation">Implementation</label>
+							<div class="c-select">
+								<select class="c-select__input" id="implementation">
+									<option value="" disabled selected>Select the type implementation</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="c-choice c-choice--checkbox customized u-mb-medium">
+							<input class="c-choice__input" id="checkbox4" type="checkbox">
+							<label class="c-choice__label" for="checkbox4">Allow Auction Without Consent</label>
+						</div>
+
+						<div class="c-field u-mb-medium">
+							<label class="c-field__label" for="time-out">TimeOut</label>
+							<div class="c-select">
+								<select class="c-select__input" id="time-out">
+									<option>10</option>
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-12 col-sm-7 col-xl-2 u-mb-xsmall">
+							<button class="c-btn c-btn--info c-btn--fullwidth">ADD</button>
+						</div>
+
 					</div>
 				</div>
-
-			</div><!-- // .container -->
+			</div>
 			<footer class="c-footer u-mh-medium">
 				<p>© 2018 Adlive France</p>
 			</footer>
