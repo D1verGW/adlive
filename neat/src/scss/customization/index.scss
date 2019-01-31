@@ -242,6 +242,10 @@
 	border-radius: 100%;
 }
 
+.c-image__dashboard {
+	//border-radius: 100%;
+}
+
 .dashboard-c-select{
 	&:after {
 		right: 20px;
@@ -249,13 +253,37 @@
 }
 
 .vertical-text-orientation {
-	&.r {
-		writing-mode: vertical-rl;
+	&.rotate {
+		transform: rotate(-180deg);
 	}
-
-	&.l {
-		writing-mode: vertical-lr;
-	}
-
+	writing-mode: vertical-rl;
 	text-orientation: mixed;
+	color: #828096;
+}
+
+.dot-before-input {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: -5px;
+		width: 10px;
+		height: 10px;
+		line-height: 0;
+		margin-top: 15px;
+		background: black;
+		border-radius: 100%;
+	}
+
+	&.red {
+		&:before {
+			background: #ed4d4d;
+		}
+	}
+	&.green {
+		&:before {
+			background: #2eca74;
+		}
+	}
 }
