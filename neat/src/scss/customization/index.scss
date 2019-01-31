@@ -43,7 +43,10 @@
 }
 
 .customized-table-row {
-
+	td {
+		font-weight: bold;
+		color: black;
+	}
 }
 
 .important-white {
@@ -119,14 +122,18 @@
 
 .customized-nav-tabs {
 	border: none;
-	border-bottom: 1px solid gray;
-	width: fit-content;
+	border-bottom: 1px solid #768093;
 	box-sizing: border-box;
+	width: auto;
 
 	.c-tabs__link.active {
 		border-bottom: 3px solid red;
 	}
 	.c-tabs__link {
 		transform: translateY(2px);
+	}
+
+	a {
+		text-align: center;
 	}
 }
