@@ -87,24 +87,51 @@ if ($('.payouts-chart').length){
   });
 }
 
+function getUniqueSelector (node) {
+	let selector = "";
+	while (node.parentElement) {
+		const siblings = Array.from(node.parentElement.children).filter(
+			e => e.tagName === node.tagName
+		);
+		selector =
+			(siblings.indexOf(node)
+				? `${node.tagName}:nth-of-type(${siblings.indexOf(node) + 1})`
+				: `${node.tagName}`) + `${selector ? " > " : ""}${selector}`;
+		node = node.parentElement;
+	}
+	return `html > ${selector.toLowerCase()}`;
+}
+
+function newChartIntoQuery(query, height) {
+	new Chartist.Line(query, {
+		labels: ["Jan", "Feb", "Mars", "Apr", "May", "June"],
+		series: [
+			[50, 40, 55, 35, 40, 50],
+			[30, 60, 25, 65, 24, 55]
+		]
+	}, {
+		fullWidth: true,
+		height: height + 'px',
+		chartPadding: {
+			top: 20,
+			right: 10,
+			bottom: 0,
+			left: 0
+		}
+	});
+}
+
+if ($('.two-lines-chart-small').length){
+	Array.from($('.two-lines-chart-small')).map(function (div) {
+		newChartIntoQuery(getUniqueSelector(div), 130);
+	});
+}
+
 // two lines chart -- dashboard03.html
 if ($('.two-lines-chart').length){
-  new Chartist.Line('.two-lines-chart', {
-    labels: ["Jan", "Feb", "Mars", "Apr", "May", "June"],
-    series: [
-      [50, 40, 55, 35, 40, 50],
-      [30, 60, 25, 65, 24, 55]
-    ]
-  }, {
-    fullWidth: true,
-    height: '300px',
-    chartPadding: {
-      top: 20,
-      right: 10,
-      bottom: 0,
-      left: 0
-    }
-  });
+	Array.from($('.two-lines-chart')).map(function (div) {
+		newChartIntoQuery(getUniqueSelector(div), 300);
+	});
 
 
   // OVERLAPPING BARS
