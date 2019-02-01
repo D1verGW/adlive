@@ -1,0 +1,653 @@
+<!doctype html>
+<!--suppress CheckTagEmptyBody -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Integration | Neat</title>
+	<meta name="description" content="Neat">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/neat.css">
+</head>
+<body>
+
+<div class="o-page">
+	<div class="o-page__sidebar js-page-sidebar">
+		<aside class="c-sidebar">
+			<div class="c-sidebar__brand">
+				<a href="#"><img src="img/logo.png" alt="Neat"></a>
+			</div>
+
+			<!-- Scrollable -->
+			<div class="c-sidebar__body">
+				<span class="c-sidebar__title"></span>
+				<ul class="c-sidebar__list">
+					<li>
+						<a class="c-sidebar__link" href="dashboard02.html">
+							<img src="img/dashboard.png" alt="Neat">
+							<i class="c-sidebar__icon feather"></i>
+							Dashboard
+						</a>
+					</li>
+					<li class="c-sidebar__item has-submenu">
+						<a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-submenu-my-inventory"
+						   aria-expanded="false" aria-controls="sidebar-submenu-my-inventory">
+							<img src="img/my_inventory.png" alt="Neat">
+							<i class="c-sidebar__icon feather"></i>
+							My Inventory
+						</a>
+						<div>
+							<ul class="c-sidebar__list collapse" id="sidebar-submenu-my-inventory"
+								style="padding-left: 30px;">
+								<li><a class="c-sidebar__link" href="_html_MyInventory_Sites.html">Sites</a></li>
+								<li><a class="c-sidebar__link" href="_html_MyInventory_Ad_Units.html">Ad Units</a></li>
+								<li><a class="c-sidebar__link" href="_html_MyInventory_Install.html">Install</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a class="c-sidebar__link is-active" href="_html_Integrations.html">
+							<img src="img/integrations.png" alt="Neat" style="filter: brightness(0);">
+							<i class="c-sidebar__icon feather"></i>
+							Integrations
+						</a>
+					</li>
+					<li class="c-sidebar__item has-submenu">
+						<a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-submenu-reporting"
+						   aria-expanded="false" aria-controls="sidebar-submenu-reporting">
+							<img src="img/reporting.png" alt="Neat">
+							<i class="c-sidebar__icon feather"></i>
+							Reporting
+						</a>
+						<div>
+							<ul class="c-sidebar__list collapse" id="sidebar-submenu-reporting" style="">
+								<li><a class="c-sidebar__link" href="_html_Reporting_Insights.html">Insights</a></li>
+								<li><a class="c-sidebar__link" href="_html_Reporting_Bids_records.html">Bids records</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a class="c-sidebar__link" href="account-settings.html">
+							<img src="img/account.png" alt="Neat">
+							<i class="c-sidebar__icon feather"></i>
+							Account
+						</a>
+					</li>
+					<li>
+						<a class="c-sidebar__link" href="dashboard02.html">
+							<img src="img/support.png" alt="Neat">
+							<i class="c-sidebar__icon feather"></i>
+							Support
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<a class="c-sidebar__footer" href="#">
+				Logout <i class="c-sidebar__footer-icon feather icon-power"></i>
+			</a>
+		</aside>
+	</div>
+
+	<main class="o-page__content">
+		<header class="c-navbar u-mb-medium">
+			<button class="c-sidebar-toggle js-sidebar-toggle">
+				<i class="feather icon-align-left"></i>
+			</button>
+
+			<h2 class="c-navbar__title"></h2>
+
+			<div class="c-dropdown dropdown u-mr-small">
+				<div class="c-notification dropdown-toggle" id="dropdownMenuToggle1" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false" role="button">
+					<i class="c-notification__icon feather icon-message-circle"></i>
+				</div>
+
+				<div class="c-dropdown__menu c-dropdown__menu--large has-arrow dropdown-menu dropdown-menu-right"
+					 aria-labelledby="dropdownMenuToggle1">
+
+              <span class="c-dropdown__menu-header">
+                Mentions
+              </span>
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+                    <span class="c-avatar c-avatar--xsmall">
+                      <img class="c-avatar__img" src="http://via.placeholder.com/72" alt="Adam Sandler">
+                    </span>
+							</div>
+
+							<div class="o-media__body">
+								<p>Hey, Julia how are you doing. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Repellat eius iste.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+                    <span class="c-avatar c-avatar--xsmall">
+                      <img class="c-avatar__img" src="http://via.placeholder.com/72" alt="Adam Sandler">
+                    </span>
+							</div>
+
+							<div class="o-media__body">
+								<p>Hey, Julia how are you doing. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Repellat eius iste.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+                    <span class="c-avatar c-avatar--xsmall">
+                      <img class="c-avatar__img" src="http://via.placeholder.com/72" alt="Adam Sandler">
+                    </span>
+							</div>
+
+							<div class="o-media__body">
+								<p>Hey, Julia how are you doing. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Repellat eius iste.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__menu-footer">
+						All Mentions
+					</a>
+				</div>
+			</div>
+
+			<div class="c-dropdown dropdown u-mr-medium">
+				<div class="c-notification has-indicator dropdown-toggle" id="dropdownMenuToggle2"
+					 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+					<i class="c-notification__icon feather icon-bell"></i>
+				</div>
+
+				<div class="c-dropdown__menu c-dropdown__menu--large has-arrow dropdown-menu dropdown-menu-right"
+					 aria-labelledby="dropdownMenuToggle2">
+
+              <span class="c-dropdown__menu-header">
+                Notifications
+              </span>
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+								<span class="c-icon c-icon--info c-icon--xsmall"><i
+									class="feather icon-globe"></i></span>
+							</div>
+
+							<div class="o-media__body">
+								<p>We've updated the Stripe Services agreement and its supporting terms. Your
+									continueduse of Stripe's services.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+								<span class="c-icon c-icon--danger c-icon--xsmall"><i class="feather icon-x"></i></span>
+							</div>
+
+							<div class="o-media__body">
+								<p>We've updated the Stripe Services agreement and its supporting terms. Your
+									continueduse of Stripe's services.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__item dropdown-item" href="#">
+						<div class="o-media">
+							<div class="o-media__img u-mr-xsmall">
+								<span class="c-icon c-icon--success c-icon--xsmall"><i class="feather icon-anchor"></i></span>
+							</div>
+
+							<div class="o-media__body">
+								<p>We've updated the Stripe Services agreement and its supporting terms. Your
+									continueduse of Stripe's services.</p>
+							</div>
+						</div>
+					</a>
+
+					<a class="c-dropdown__menu-footer">
+						All Notifications
+					</a>
+				</div>
+			</div>
+
+			<div class="c-dropdown dropdown">
+				<div class="c-avatar c-avatar--xsmall dropdown-toggle" id="dropdownMenuAvatar" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false" role="button">
+					<img class="c-avatar__img" src="http://via.placeholder.com/72" alt="Adam Sandler">
+				</div>
+
+				<div class="c-dropdown__menu has-arrow dropdown-menu dropdown-menu-right"
+					 aria-labelledby="dropdownMenuAvatar">
+					<a class="c-dropdown__item dropdown-item" href="account-settings.html">Edit Profile</a>
+					<a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
+					<a class="c-dropdown__item dropdown-item" href="#">Log out</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="container-fluid">
+			<div class="u-mv-medium col-md-12">
+				<h2 class="u-mb-small">Integration</h2>
+				<p class="u-mb-small">Find below the list of partners you have chosen to implement on your Header
+					Bidding container</p>
+			</div>
+
+			<div class="row">
+				<div class="col-12 u-ph-zero">
+					<div class="col-md">
+						<div class="c-table">
+							<table class="c-table">
+								<thead class="c-table__head">
+								<tr class="c-table__row">
+									<th class="c-table__cell c-table__cell--head">Account name</th>
+									<th class="c-table__cell c-table__cell--head">Partners</th>
+									<th class="c-table__cell c-table__cell--head">Status</th>
+									<th class="c-table__cell c-table__cell--head">Sync status</th>
+								</tr>
+								</thead>
+
+								<tbody>
+								<tr class="c-table__row">
+									<td class="c-table__cell">criteo</td>
+									<td class="c-table__cell">
+										<img class="main-page-img" src="img/criteo.png" alt="Jessica Alba">
+									</td>
+									<th class="c-table__cell">Connected</th>
+									<td class="c-table__cell">
+										<div class="col-12 no-left-right-m-p mv-auto">
+											<label class="c-switch">
+												<input class="c-switch__input" id="switch1" type="checkbox" checked="">
+												<span class="c-switch__label vertical-center-switch">On</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr class="c-table__row">
+									<td class="c-table__cell">districtmedia</td>
+									<td class="c-table__cell">
+										<img class="main-page-img" src="img/district.png" alt="Jessica Alba">
+									</td>
+									<th class="c-table__cell">Connected</th>
+									<td class="c-table__cell">
+										<div class="col-12 no-left-right-m-p mv-auto">
+											<label class="c-switch ">
+												<input class="c-switch__input" id="switch2" type="checkbox" checked="">
+												<span class="c-switch__label vertical-center-switch">On</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr class="c-table__row">
+									<td class="c-table__cell">improvedigital</td>
+									<td class="c-table__cell">
+										<img class="main-page-img" src="img/improve.png" alt="Jessica Alba">
+									</td>
+									<th class="c-table__cell">Connected</th>
+									<td class="c-table__cell">
+										<div class="col-12 no-left-right-m-p mv-auto">
+											<label class="c-switch ">
+												<input class="c-switch__input" id="switch3" type="checkbox" checked="">
+												<span class="c-switch__label vertical-center-switch">On</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr class="c-table__row">
+									<td class="c-table__cell">index_exchange</td>
+									<td class="c-table__cell">
+										<img class="main-page-img" src="img/index.png" alt="Jessica Alba">
+									</td>
+									<th class="c-table__cell">Connected</th>
+									<td class="c-table__cell">
+										<div class="col-12 no-left-right-m-p mv-auto">
+											<label class="c-switch ">
+												<input class="c-switch__input" id="switch4" type="checkbox" checked="">
+												<span class="c-switch__label vertical-center-switch">On</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr class="c-table__row">
+									<td class="c-table__cell">pubmatic</td>
+									<td class="c-table__cell">
+										<img class="main-page-img" src="img/pubmatic.png" alt="Jessica Alba">
+									</td>
+									<th class="c-table__cell">Connected</th>
+									<td class="c-table__cell">
+										<div class="col-12 no-left-right-m-p mv-auto">
+											<label class="c-switch ">
+												<input class="c-switch__input" id="switch5" type="checkbox" checked="">
+												<span class="c-switch__label vertical-center-switch">On</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="u-mv-medium col-md-12">
+				<h2 class="u-mb-small">Partner list</h2>
+				<p class="u-mb-small">Choose from the list bolow the partners with whom you wish to connect</p>
+			</div>
+
+			<div class="c-card u-mb-large" style="padding: 0;">
+				<div class="row no-left-right-m-p col-12 u-pt-zero u-pb-medium">
+					<div class="col-xl-4 col-md-5 col-sm-12 u-pt-xsmall u-mr-zero">
+						<div
+							class="row u-mh-zero c-tabs__list nav nav-tabs customized-nav-tabs u-pr-small u-pl-small u-pb-zero u-pt-zero"
+							id="myTab" role="tablist">
+							<a class="col-6 c-tabs__link active u-pr-small u-pl-small u-ml-zero u-mr-zero u-pb-xsmall u-pt-zero"
+							   id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+							   aria-selected="true">Banners</a>
+							<a class="col-6 c-tabs__link u-pr-small u-pl-small u-ml-zero u-mr-zero u-pb-xsmall u-pt-zero"
+							   id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+							   aria-controls="nav-profile" aria-selected="fals?e">Videos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row no-left-right-m-p col-12 u-pt-zero u-pb-medium integrations-page-cards">
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/criteo.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">criteo</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Offer a variety of ads including: native ads, standart IAB, Sticky
+									footer, native API.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/pubmatic.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">pubmatic</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									PubMatic has a longstanding commitment to transparency, and to being
+									open about how digital ad space is traded.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--danger c-btn--large u-mh-auto">Disconnect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/index.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">index_exchange</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									A global advertising marketplace where premium digital media companies
+									sell their ad impressions transparently and real time.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create is-disabled c-btn--large u-mh-auto">Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/improve.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">improvedigital</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Improve Digital is the All-in-One Advertising Platform for Publishers,
+									Content Providers and Broadcasters.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/criteo.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">criteo</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Offer a variety of ads including: native ads, standart IAB, Sticky
+									footer, native API.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/pubmatic.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">pubmatic</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									PubMatic has a longstanding commitment to transparency, and to being
+									open about how digital ad space is traded.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--danger c-btn--large u-mh-auto">Disconnect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/index.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">index_exchange</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									A global advertising marketplace where premium digital media companies
+									sell their ad impressions transparently and real time.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create is-disabled c-btn--large u-mh-auto">Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/improve.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">improvedigital</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Improve Digital is the All-in-One Advertising Platform for Publishers,
+									Content Providers and Broadcasters.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/criteo.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">criteo</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Offer a variety of ads including: native ads, standart IAB, Sticky
+									footer, native API.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/pubmatic.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">pubmatic</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									PubMatic has a longstanding commitment to transparency, and to being
+									open about how digital ad space is traded.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--danger c-btn--large u-mh-auto">Disconnect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/index.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">index_exchange</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									A global advertising marketplace where premium digital media companies
+									sell their ad impressions transparently and real time.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create is-disabled c-btn--large u-mh-auto">Connect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="row u-mh-zero fixed-image-block">
+							<img class="center_image fixed-image u-mh-auto" src="img/improve.png" alt="Video">
+						</div>
+						<div class="u-mh-medium u-mv-medium">
+							<div class="row u-flex">
+								<h5 class="u-mh-auto">improvedigital</h5>
+							</div>
+							<div class="row u-flex">
+								<h6 class="style_text_description u-mh-auto">
+									Improve Digital is the All-in-One Advertising Platform for Publishers,
+									Content Providers and Broadcasters.
+								</h6>
+							</div>
+						</div>
+						<div class="row u-mh-zero u-mv-medium">
+							<div class="col-12 u-flex">
+								<button class="c-btn c-btn--create c-btn--large u-mh-auto">&#65291; Connect</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- // .container -->
+
+		<footer class="c-footer u-mh-medium">
+			<p>© 2018 Adlive France</p>
+		</footer>
+	</main>
+</div>
+
+<!-- Main JavaScript -->
+<script src="js/neat.js"></script>
+</body>
+</html>

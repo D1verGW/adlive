@@ -103,9 +103,18 @@
 }
 
 .style_text_description {
-	margin-top: 2%;
 	color: #7a8085;
 	text-align: center;
+
+	max-height: 3em;
+	line-height: 1.5em;
+
+	display: block; /* or inline-block */
+	text-overflow: ellipsis;
+	word-wrap: normal;
+	overflow: hidden;
+
+	font-size: 0.75em;
 }
 
 .center_image {
@@ -258,7 +267,7 @@
 
 .dashboard-c-select {
 	&:after {
-		right: 20px;
+		right: 0;
 	}
 }
 
@@ -323,9 +332,63 @@
 	}
 }
 
+@media screen and (min-width: 1500px) {
+	.style_text_description {
+		font-size: 1em;
+	}
+}
+
 @media screen and (max-width: 1500px) {
+	.style_text_description {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 1299.9px) {
+	.style_text_description {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width: 1199.9px) {
+	.style_text_description {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 1199.9px) {
+	.apply-button-in-reporting {
+		margin-top: 2%;
+	}
+}
+
+@media screen and (max-width: 1499.9px) {
 	.dashboard-partrers-with-income-grid {
 		grid-template-rows: 1fr 1fr;
+	}
+}
+
+.fixed-image {
+	width: auto;
+	height: fit-content;
+	margin: auto;
+}
+
+.fixed-image-block {
+	height: 130px;
+}
+
+.integrations-page-cards {
+	.style_text_description {
+		height: 6em;
+		max-height: 6em;
+	}
+
+	h5 {
+		&.u-mh-auto {
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
 	}
 }
 

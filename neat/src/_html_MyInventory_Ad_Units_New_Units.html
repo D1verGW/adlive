@@ -46,15 +46,17 @@
 							My Inventory
 						</a>
 						<div>
-							<ul class="c-sidebar__list collapse show" id="sidebar-submenu-my-inventory" style="padding-left: 30px;">
+							<ul class="c-sidebar__list collapse show" id="sidebar-submenu-my-inventory"
+								style="padding-left: 30px;">
 								<li><a class="c-sidebar__link" href="_html_MyInventory_Sites.html">Sites</a></li>
-								<li><a class="c-sidebar__link is-active" href="_html_MyInventory_Ad_Units.html">Ad Units</a></li>
+								<li><a class="c-sidebar__link is-active" href="_html_MyInventory_Ad_Units.html">Ad
+									Units</a></li>
 								<li><a class="c-sidebar__link" href="_html_MyInventory_Install.html">Install</a></li>
 							</ul>
 						</div>
 					</li>
 					<li>
-						<a class="c-sidebar__link" href="dashboard02.html">
+						<a class="c-sidebar__link" href="_html_Integrations.html">
 							<img src="img/integrations.png" alt="Neat">
 							<i class="c-sidebar__icon feather"></i>
 							Integrations
@@ -70,7 +72,8 @@
 						<div>
 							<ul class="c-sidebar__list collapse" id="sidebar-submenu-reporting" style="">
 								<li><a class="c-sidebar__link" href="_html_Reporting_Insights.html">Insights</a></li>
-								<li><a class="c-sidebar__link" href="_html_Reporting_Bids_records.html">Bids records</a></li>
+								<li><a class="c-sidebar__link" href="_html_Reporting_Bids_records.html">Bids records</a>
+								</li>
 							</ul>
 						</div>
 					</li>
@@ -245,41 +248,76 @@
 		<div class="container-fluid">
 			<div class="u-mb-small col-md-12">
 				<h2 class="u-mb-small style_text_ad_unit">Ad Units</h2>
-				<p class="u-mb-small">Define placements of your sites to implement them on your Header Bidding container.</p>
+				<p class="u-mb-small">Define placements of your sites to implement them on your Header Bidding
+					container.</p>
 				<ul class="c-pagination u-mb-medium">
-					<li><a class="c-pagination__link" href="_html_MyInventory_Ad_Units.html"><i class="feather icon-chevron-left"></i> </a></li>
+					<li><a class="c-pagination__link" href="_html_MyInventory_Ad_Units.html"><i
+						class="feather icon-chevron-left"></i> </a></li>
 				</ul>
 			</div>
 			<div class="c-card u-mb-large">
 				<div class="row col-xl-12">
-					<div class="col-xl-12">
-						<h3 class="u-mb-small style_text_ad_unit">Create new Ad Unit</h3>
+					<div class="row col-xl-12">
+						<h4 class="u-mb-small style_text_ad_unit">Create new Ad Unit</h4>
 					</div>
 
-					<div class="col-xl-4">
-						<img class="center_image" src="img/Banner.png" alt="Banner">
-						<h5 class="style_text_subtitle">Banner</h5>
-						<h6 class="style_text_description">Standard IAB display ads as 728x90, 300x250,</br> 300x600, 970x250 ...</h6>
-						<div class="col-12 col-sm-7 col-xl-3 u-mb-xsmall u-pl-zero u-pr-zero center_button">
-							<button class="c-btn c-btn--create c-btn--fullwidth">Create</button>
+					<div class="col-xl-12 row u-mv-large u-mh-auto">
+						<div class="col-l-12 col-xl-4">
+							<div class="row u-mh-zero fixed-image-block">
+								<img class="center_image fixed-image u-mh-auto" src="img/Banner.png" alt="Video">
+							</div>
+							<div class="u-mh-medium u-mv-medium">
+								<div class="row u-flex">
+									<h5 class="u-mh-auto">Banner</h5>
+								</div>
+								<div class="row u-flex">
+									<h6 class="style_text_description u-mh-auto">Standard IAB display ads as 728x90,
+										300x250, 300x600, 970x250 ...</h6>
+								</div>
+							</div>
+							<div class="row u-mh-zero u-mv-medium">
+								<div class="col-12 u-flex">
+									<button class="c-btn c-btn--create c-btn--large u-mh-auto">Create</button>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div class="col-xl-4">
-						<img class="center_image" src="img/Video.png" alt="Video">
-						<h5 class="style_text_subtitle">Video</h5>
-						<h6 class="style_text_description">Put in competition the different demand sources Video by choosing this format</h6>
-						<div class="col-12 col-sm-7 col-xl-3 u-mb-xsmall u-pl-zero u-pr-zero center_button">
-							<button class="c-btn c-btn--create c-btn--fullwidth">Create</button>
+						<div class="col-l-12 col-xl-4">
+							<div class="row u-mh-zero fixed-image-block">
+								<img class="center_image fixed-image u-mh-auto" src="img/Video.png" alt="Video">
+							</div>
+							<div class="u-mh-medium u-mv-medium">
+								<div class="row u-flex">
+									<h5 class="u-mh-auto">Video</h5>
+								</div>
+								<div class="row u-flex">
+									<h6 class="style_text_description u-mh-auto">Put in competition the different demand
+										sources Video by choosing this format</h6>
+								</div>
+							</div>
+							<div class="row u-mh-zero u-mv-medium">
+								<div class="col-12 u-flex">
+									<button class="c-btn c-btn--create c-btn--large u-mh-auto">Create</button>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div class="col-xl-4">
-						<img class="center_image" src="img/Native.png" alt="Native">
-						<h5 class="style_text_transparent">Native</h5>
-						<h6 class="style_text_description_light">Put in competition the different demand sources Native by choosing this format.</h6>
-						<div class="col-12 col-sm-7 col-xl-3 u-mb-xsmall u-pl-zero u-pr-zero center_button">
-							<button class="c-btn c-btn--info-change c-btn--fullwidth">Create</button>
+						<div class="col-l-12 col-xl-4">
+							<div class="row u-mh-zero fixed-image-block">
+								<img class="center_image fixed-image u-mh-auto" src="img/Native.png" alt="Video">
+							</div>
+							<div class="u-mh-medium u-mv-medium">
+								<div class="row u-flex">
+									<h5 class="u-mh-auto">Native</h5>
+								</div>
+								<div class="row u-flex">
+									<h6 class="style_text_description u-mh-auto">Put in competition the different demand
+										sources Video by choosing this format</h6>
+								</div>
+							</div>
+							<div class="row u-mh-zero u-mv-medium">
+								<div class="col-12 u-flex">
+									<button class="c-btn c-btn--create c-btn--large u-mh-auto">Create</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
