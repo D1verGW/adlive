@@ -17,6 +17,6 @@ $(function(){
 	Sidebar();
 
 	// 2. Dragula
-	var dragulaObj = dragula( $('.c-pipeline').toArray(), {});
+	// var dragulaObj = dragula( $('.c-pipeline').toArray(), {});
 
 });

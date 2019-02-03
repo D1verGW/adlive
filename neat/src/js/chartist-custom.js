@@ -164,5 +164,23 @@ if ($('.two-lines-chart').length){
       }
   };
 
-  new Chartist.Bar('.overlapp-bars-chart', data, options);
+	if ($('.overlapp-bars-chart').length){
+		new Chartist.Bar('.overlapp-bars-chart', data, options);
+	}
 }
+
+function resizeDashboardSecondColumnHeight () {
+	let table = $('.modified-dashboard-table')[0];
+	let sameHeightBlock = $('.modified-dashboard-estimated-income')[0];
+
+	if (table && sameHeightBlock) {
+		if ($(window).outerWidth() < 1199) {
+			sameHeightBlock.style.height = '';
+		} else {
+			sameHeightBlock.style.height = table.offsetHeight + 'px';
+		}
+	}
+}
+
+window.addEventListener('resize', resizeDashboardSecondColumnHeight);
+window.addEventListener('DOMContentLoaded', resizeDashboardSecondColumnHeight);
