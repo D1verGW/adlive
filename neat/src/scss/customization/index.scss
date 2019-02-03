@@ -40,6 +40,15 @@
 			}
 		}
 	}
+
+	.c-table {
+		border: none;
+		box-shadow: none;
+	}
+	&.c-table {
+		border: none;
+		box-shadow: none;
+	}
 }
 
 /* enable absolute positioning */
@@ -226,6 +235,7 @@
 	border-bottom: 1px solid #768093;
 	box-sizing: border-box;
 	width: auto;
+	height: max-content;
 
 	.c-tabs__link.active {
 		border-bottom: 3px solid red;
@@ -236,6 +246,7 @@
 
 	a {
 		text-align: center;
+		height: max-content;
 	}
 }
 
@@ -406,6 +417,12 @@
 	}
 }
 
+@media screen and (min-width: 1200px) {
+	.apply-button-in-reporting {
+		padding: 0;
+	}
+}
+
 .fixed-image {
 	width: auto;
 	height: fit-content;
@@ -531,4 +548,24 @@
 
 .three-cols-min-width {
 	min-width: 345px;
+}
+
+.install-page-min-width-buttons {
+	min-width: 265px;
+}
+
+.customized-modal-tabs {
+	.c-tabs__pane {
+		font-size: 0.7em;
+		font-family: monospace;
+	}
+
+	.c-tabs {
+		border: none;
+		box-shadow: none;
+	}
+
+	nav, .c-tabs__content, .c-tabs__pane {
+		border: none;
+	}
 }
