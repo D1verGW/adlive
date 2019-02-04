@@ -37,7 +37,7 @@ const folder = {
 gulp.task('scripts', function() {
 	return gulp.src(['dev_assets/scripts/*.js'])
 		.pipe(concat('all.min.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
 		.pipe(gulp.dest('public/js'))
 		//.pipe(livereload());
@@ -194,7 +194,7 @@ gulp.task('browserSync', function() {
 
 gulp.task('uglify-error-debugging', function (cb) {
 	pump([
-	//	gulp.src('app/**/*.js'),
+		gulp.src('app/**/*.js'),
 		uglify(),
 		gulp.dest('./dist/')
 	], cb);

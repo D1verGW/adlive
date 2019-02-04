@@ -31,6 +31,4 @@ Thumbs.db
 package-lock.json
 /neat/dist/
 
-neat/src/scss/vendor/
-
 neat/src/js/vendor/
