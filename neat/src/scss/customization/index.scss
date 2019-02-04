@@ -221,7 +221,7 @@
 
 	&:after {
 		position: absolute;
-		top: 6px;
+		top: 0px;
 		right: 20px;
 		color: #768093;
 		font-family: "feather";
@@ -303,7 +303,7 @@
 		width: 10px;
 		height: 10px;
 		line-height: 0;
-		margin-top: 15px;
+		margin-top: 10px;
 		background: black;
 		border-radius: 100%;
 	}
@@ -559,6 +559,10 @@
 	min-width: 265px;
 }
 
+.two-cols-min-width-200 {
+	min-width: 200px;
+}
+
 .customized-modal-tabs {
 	.c-tabs__pane {
 		font-size: 0.7em;
@@ -573,4 +577,12 @@
 	nav, .c-tabs__content, .c-tabs__pane {
 		border: none;
 	}
+}
+
+html {
+	font-size: 0.8rem;
+}
+
+.c-select::after {
+	top: 0px;
 }

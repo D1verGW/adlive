@@ -125,7 +125,7 @@ function newChartIntoQuery(query, height) {
 
 if ($('.two-lines-chart-small').length) {
 	Array.from($('.two-lines-chart-small')).map(function (div) {
-		newChartIntoQuery(getUniqueSelector(div), 130);
+		newChartIntoQuery(getUniqueSelector(div), 110);
 	});
 }
 
@@ -196,8 +196,8 @@ function changeCheckboxIdWithScript() {
 	}
 }
 
-window.addEventListener('resize', resizeDashboardSecondColumnHeight);
+// window.addEventListener('resize', resizeDashboardSecondColumnHeight);
 window.addEventListener('DOMContentLoaded', () => {
-	resizeDashboardSecondColumnHeight();
+	// resizeDashboardSecondColumnHeight();
 	changeCheckboxIdWithScript();
 });
