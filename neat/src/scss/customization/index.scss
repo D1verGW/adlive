@@ -526,7 +526,7 @@
 	width: 400px;
 	min-height: 200px;
 	font-family: monospace;
-	font-size: 0.7em;
+	font-size: 12px;
 	padding: 1em 1.5em;
 	color: #758094;
 }
@@ -534,7 +534,7 @@
 @media screen and (max-width: 500px) {
 	.ads-txt-textarea {
 		width: 250px;
-		font-size: 0.5em;
+		font-size: 0.8rem;
 		padding: 0.3em 0.45em;
 	}
 }
@@ -542,7 +542,7 @@
 @media screen and (max-width: 370px) {
 	.ads-txt-textarea {
 		width: 180px;
-		font-size: 0.5em;
+		font-size: 0.6em;
 		padding: 0.1em 0.15em;
 	}
 }
@@ -564,8 +564,9 @@
 }
 
 .customized-modal-tabs {
+
 	.c-tabs__pane {
-		font-size: 0.7em;
+		font-size: 12px;
 		font-family: monospace;
 	}
 
@@ -585,4 +586,21 @@ html {
 
 .c-select::after {
 	top: 0px;
+}
+
+.account-block {
+	input, select {
+		font-size: 12px;
+	}
+}
+
+#user-name,
+#user-country,
+#user-email,
+#user-phone,
+#implementation,
+#input1,
+#time-out,
+select.c-select__input.gray-option-value {
+	font-size: 12px;
 }
